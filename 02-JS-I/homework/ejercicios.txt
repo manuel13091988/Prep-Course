@@ -1,0 +1,83 @@
+1 vaiables: es un espacio de meoria reservado para almacener un dato X que puede ser 
+            generado por medio de un valor calculado o en su efecto ingresado por el usuario.todas las variables deben 
+            declararse y para ello en js existen muchas forma de declararlas (var, let, constant) pero en esta ocacion veremos la mas 
+            usada.
+
+            var: esta forma de declararla es una palabra clave y debe llevar un valor.
+             ejemplo de declaracion de variable
+                var = "Hola mundo"
+
+            esta decaracion esta compuesta por la Sentencia de declaracion (var),
+            el signo operador es (=) en este caso 
+            y el string (Hola mundo), cualquier bloque de texto que valla entre "" es una cadena o String.
+            un string es una declaracion que define el tipo de dato como dato de Texto.
+
+            las declaraciones de variables deben ser claras referente al tipo de dato que se va a usar ya sea
+            -String ("")
+            -Number (positivo o negativo)
+            -Boolean (true (verdadero) o false (falso))
+
+            Ejemplo de declaracion de variable numerica 
+                var Positivo = 24 
+                var Negativo = -24
+            
+            Ejemplo de declaracion de variable Boolean
+                var MiNombreEsManuel = true
+
+2 Funciones: estas son definidas como objetos imbocables o callable objects, sirven para manipular y operar las variables
+            los objetps poseen metodos que devuelven diferentes resultados.Existen 3 formas de contruirlas que son las siguentes:
+            
+            Funcion MiFuncion() {}
+            var otraFuncion = function () {};
+            Usaremos la primera.
+            function miFuncion() {}
+             
+             esta compuesta de la siguente manera 
+             function: indica al programa que esto es una Funcion.
+             MiFuncion: Nombre de la funcion 
+             MiFuncion(): sintaxis para ejecutar una función (es obligatorio)  
+             ():contenedor de argumento ()
+             {}: contenedor del codigo
+             (
+
+            argumentos: son basicamente variables que se asocian a una funcion ingresando el nombre de la variable a los parentesis 
+                        toma el nombre de argumento, permitiendo la invocacion de la funcion en el codigo Podemos agregar múltiples
+                        argumentos colocando una coma entre ellos:
+                        
+                        ejemplo: 
+                            function sumarDosNumeros(a, b) {
+                            var suma = a + b;
+                            return suma;
+                            
+                `return`: En el ejemplo anterior presentamos la declaración `return`. No vamos a usar `console.log` con todo lo que salga de una 
+                        función. Lo más probable es que queramos devolver algo. En este caso es la suma de los dos números. Piense en la declaración
+                        de retorno ("return") como la única forma en que los datos escapan de una función. No se puede acceder a nada más que a lo 
+                        que se devuelve fuera de la función. También tenga en cuenta que cuando una función golpea una declaración de retorno, la 
+                        función detiene inmediatamente lo que está haciendo y "devuelve" lo especificado.
+
+                        Si intentamos `console.log` algo que declaramos dentro de la función, devolverá `undefined` porque no tenemos acceso a él 
+                        fuera de la función. Esto se llama Scope ("alcance"). La única forma de acceder a algo dentro de la función es devolverlo.
+                        También podemos establecer variables para igualar lo que devuelve una función.
+
+3 Declaraciones `if`: es un operadores de control de flujo y comparación, se utiliza para verificar si es que la condicion se da a 
+                    verdadero si es asi continuara con el codigo espesificado para "true" de lo contrario continuara con la indicacion
+                    siguente para Else o simple mente si Else no esta definido devolvera falso  o false
+
+                    Ejemplo de uso If 
+
+                        function puedeManejar(edad) {
+                            if (edad > 18) {
+                                return true;
+                            }
+
+                    El símbolo "mayor que" (`>`) que ve en el último ejemplo se llama *Operador de comparación*. Los operadores de
+                     comparación evalúan dos elementos y devuelven ***verdadero*** o ***falso***. Estos operadores son: 
+                     `<`, `<=`, `>`, `> =`, `===`, `! ==`. 
+  
+
+
+
+
+
+                
+                    
