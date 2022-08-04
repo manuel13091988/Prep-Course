@@ -271,8 +271,8 @@ Podemos agregar múltiples argumentos colocando una coma entre ellos:
 
 ```javascript
 function sumarDosNumeros(a, b) {
-  var suma = a + b;
-  return suma;
+var suma = a + b;
+return suma;
 }
 
 sumarDosNumeros(1, 5); // 6
