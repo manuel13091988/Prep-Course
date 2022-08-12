@@ -1,0 +1,125 @@
+    
+    Las Arrays:
+    Son en resumidas cuentas contenedores de variables o matrices que almacenan un grupo de variables y sus tipos de datos 
+    corrspondientes, en un solo contenedor "[]". Estas nos dan la oportunidad de accede a ellas cuando queramos, con el solo hecho de 
+    llamarlas con su numero de picicion de la varible,
+    
+        Posicion de Variables
+
+        const nombresEstudiantes = ['Martin', 'Antonio', 'Sara', 'Samuel'];
+                                        0         1        2        3
+
+    como podemos observar la primera pocicion siempre sera 0 estableciendo la segunda pocicion grafica como la N°1 en enumeracion y asi
+    sucesivamente
+
+        Ejemplo de llamado de Variables
+
+        const nombresEstudiantes = ['Martin', 'Antonio', 'Sara', 'Samuel'];
+        console.log(nombresEstudiantes[1]);  
+
+        // 'Antonio' 
+    
+    Las variables se declaran ndentro del "[]" y se deben separar por "," entre ellas como lo apreciamos en el ejemplo anterior.
+    Al igual que el tipo de dato *String* tiene un método incorporado `.length`, la matriz tiene muchos métodos incorporados útiles.
+    la matriz`.length` devolverá el número de elementos en una matriz:
+
+        Ejemplo
+
+        const nombresEstudiantes = ['Martin', 'Antonio', 'Sara', 'Samuel'];
+        console.log(nombresEstudiantes.length); 
+
+        // 4.
+
+    Cuando tenemos muchos elementos en una matriz Y queremos hacer referencia al ultimo pero no sabemmos el numero de su pocicion,
+    le indicamos al programa que de la matriz existente, extraiga del codigo el numero de elementos con el metodo ".length" y a este
+    resutado -1.
+
+        Ejemplo
+
+        const nombresEstudiantes = ['Martin', 'Antonio', 'Sara', ... ,'Samuel'];
+        console.log(nombresEstudiantes[nombresEstudiantes.length - 1]);  
+        
+        // 'Samuel'
+
+    Asignaciones de elemetos en las matrices
+
+    Agregando Elemento a una Arrays:
+    para poder agregar cualquier elemento en una matriz de manera automatica. Debemos decirle a nuestro programa que hay un
+    variable que queremos asignar a nustra Arrays, para esto le indicaremos primeramente a que matriz haremos referencia y ocuparemos
+    el metodo ".Push" para indicarle que asignaremos un elemento nuevo a nuestra matriz, vamos a declarar
+    el valor del elemento entre "()" este metodo opera en el ultimo registro de la matriz.
+
+        Ejemplo
+        const nombresEstudiantes = ['Martin', 'Antonio', 'Sara', 'Samuel']; // "Matriz Existente. Esta es a la que aremos referencia."
+        
+        nombresEstudiantes.push('Patricia');
+        console.log(nombresEstudiantes);  
+        
+        // ['Martin', 'Antonio', 'Sara', 'Samuel', 'Patricia']
+
+    Si queremos Agregarlo al primer registro debemos decile al programa que agreguegaremos una variable a los elementos existentes 
+    en la matriz y que debe corre el primer registro a el enumerador [1] dejando el nuevo en el enumerador [0]. para esto ocuparemos 
+    el nombre de nuestra matriz para indicar referencia de la matriz con el metodo ".unshift()" como en el ejemplo anterior pondremos 
+    entre los "()" el valor que agregarémos.
+
+        Ejemplo
+        const nombresEstudiantes = ['Martin', 'Antonio', 'Sara', 'Samuel']; 
+        nombresEstudiantes.unshift('Leo');
+        console.log(nombresEstudiantes);  
+        
+        // ['Leo', 'Martin', 'Antonio', 'Sara', 'Samuel']
+        
+        Nueva operacion:
+        nombresEstudiantes.shift();
+
+        console.log(nombresEstudiantes);  // ['Martin', 'Antonio', 'Sara', 'Samuel']
+
+
+    Eliminando elemento:
+    `.pop` elimina el último elemento de la matriz, disminuyendo la longitud en 1. `.pop` devuelve el elemento "reventado" (*popped*).
+    
+        Ejemplo
+        const nombresEstudiantes = ['Martin', 'Antonio', 'Sara', 'Samuel'];
+        nombresEstudiantes.pop();
+        console.log(nombresEstudiantes);  
+
+        // ['Martin', 'Antonio', 'Sara']
+
+    `.shift()` eliminará el primer elemento de la matriz.
+
+
+        const nombresEstudiantes = ['Leo', 'Martin', 'Antonio', 'Sara', 'Samuel']
+        nombresEstudiantes.shift();
+        console.log(nombresEstudiantes);
+
+        // ['Martin', 'Antonio', 'Sara', 'Samuel']
+    
+    Reasiganar un elemento: 
+    para reasignar un valor X a un elemento o cambiarlo, usaremos el nombre de la matriz y el enumerador "[]" para indicar referencia
+    con un signo "=" indicaremos el valor que reemplazaremos.
+
+        Ejemplo
+        const nombresEstudiantes = ['Martin', 'Antonio', 'Sara', 'Samuel']; // "Matriz A la que hacemos referencia"
+        
+        nombresEstudiantes[0] = 'Jorge';
+        console.log(nombresEstudiantes);  
+        
+        // ['Jorge', 'Antonio', 'Sara', 'Samuel']
+   
+    Como podemos observar con este codigo remplazamos el 1er elemento "Martin" cuyo valor de enumeracion es 0 por "jorge".
+
+    Los blucles for se usan para realizar acciones sobre todos los elementos de la matriz, usando index access technique" esta 
+    tecnica accederemos a cada elemento de la matriz para ello usaremos el metodo ".length" como punto de parada para el ciclo.
+
+        Ejemplo
+        const nombresEstudiantes = ['Martin', 'Antonio', 'Sara', 'Samuel'];
+
+        for (let i = 0; i < nombresEstudiantes.length; i++) {
+            console.log(nombresEstudiantes[i]);
+        }
+
+        // 'Martin'
+        // 'Antonio'
+        // 'Sara'
+        // 'Samuel'
+
