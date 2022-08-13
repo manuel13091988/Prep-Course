@@ -1,16 +1,16 @@
     
     Las Arrays:
-    Son en resumidas cuentas contenedores de variables o matrices que almacenan un grupo de variables y sus tipos de datos 
-    corrspondientes, en un solo contenedor "[]". Estas nos dan la oportunidad de accede a ellas cuando queramos, con el solo hecho de 
-    llamarlas con su numero de picicion de la varible,
+    Son en resumidas cuentas contenedores de variables o matrices que almacenan un grupo de variables y sus tipos de datos
+    corrspondientes, en un solo contenedor "[]". esto nos dan la oportunidad de accede a ellas cuando queramos, con el solo hecho de 
+    llamarlas con su numero de pocicion de los elementos en la matriz,
     
         Posicion de Variables
 
         const nombresEstudiantes = ['Martin', 'Antonio', 'Sara', 'Samuel'];
                                         0         1        2        3
 
-    como podemos observar la primera pocicion siempre sera 0 estableciendo la segunda pocicion grafica como la N°1 en enumeracion y asi
-    sucesivamente
+    como podemos observar la primera pocicion siempre sera 0 estableciendo la segunda pocicion grafica como la N°1 y la que sigue en N2
+    y asi sucesivamente
 
         Ejemplo de llamado de Variables
 
@@ -32,7 +32,7 @@
 
     Cuando tenemos muchos elementos en una matriz Y queremos hacer referencia al ultimo pero no sabemmos el numero de su pocicion,
     le indicamos al programa que de la matriz existente, extraiga del codigo el numero de elementos con el metodo ".length" y a este
-    resutado -1.
+    resultado -1.
 
         Ejemplo
 
@@ -64,6 +64,7 @@
 
         Ejemplo
         const nombresEstudiantes = ['Martin', 'Antonio', 'Sara', 'Samuel']; 
+        
         nombresEstudiantes.unshift('Leo');
         console.log(nombresEstudiantes);  
         
@@ -122,4 +123,42 @@
         // 'Antonio'
         // 'Sara'
         // 'Samuel'
+    Propiedades a conciderar en los Arrays:
+
+        *Array.join(): esta propiedad nos permite devolcer un string con todas sus palabras concatenadas entre los "()" indicaremos 
+                la forma en que será.
+
+                    Ejemplo 
+                    
+                    Array["Camilo","compró","una","camioneta"]
+                    console.log(Array.join(" "))
+
+                    // Camilo compro una camioneta
+
+                Como podemos observar en el ejemplo anterior entre sus "()" esta " " esta descripcion permite que la concatenacion 
+                sea espaciada entre cada elelemto de las Array.
+        
+        *Array.toString(): hace referencia a una cadena es decir si es numerico el contenido de la matriz lo asume como string supongamos
+                        que tenem,os una array con los siguientes elementos 19, 21, 32, 41 esta propiedad permite que su entendimiento
+                        se "19", "21", "32", "41".
+
+                        Ejemplo 
+                        Array[ 19, 21, 32, 41];
+                        console.log(Array.toString());
+
+                        // ["19", "21", "32", "41"]
+
+        *Array.charAt(): esta propiedad cuenta los caracteres de cada elemento y devuelve la ubicacion espesifica de un caracter en una 
+                    cadena de texto y reconose su valor.
+
+                        Ejemplo
+                    let texto = "Cuando desperte, Me levante y cai de la cama";
+                    let index = 12
+                    console.log("el caracter en el indicve ${index} es ${texto.charAt(index)})
+
+                    //"el cactar en el indice 12 es r".
+        
+        Nota: cada ves que se declaran mas de 2 variables con la inicial "let" en un blucle se debe declarar lavariable "i" co "var". 
+
+
 
