@@ -22,9 +22,7 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   let ArrayNuevo = [];
-  for (i = 0; i < array.length; i++) {
-    ArrayNuevo[i] = array[i] + 1;  
-  }
+ 
   return ArrayNuevo;
 }
 
