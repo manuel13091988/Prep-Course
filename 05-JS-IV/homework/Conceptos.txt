@@ -1,0 +1,109 @@
+En esta hoja de block podremos ver la definicion de los siguientes puntos: 
+
+	* Objetos
+	* Propiedades
+	* Métodos
+	* Bucle `for…in`
+	* Notación de puntos vs notación de corchetes
+
+* Objetos: son una propiedad...
+             se instancian usando llave ("{}").
+
+             Los objetos en js son simplemente matrices de datos, con sus respectivas
+	         propiedades y metodos. que se asocian a cierto atributos que contiene el objeto.
+		
+            Por ejemplo. Crearemos un objeto, con el nombre usuario, que será inmodificable. Por lo que se asumirá, como constante. En el que tendremos 2 propiedades... como: el nombre de usuario y la contraseña de este.
+		
+            La compocicion y sintaxis de los objetos. Estan conformados por el nombre del objeto, su asignación respectiva con su signo "=", y el contenido de sus propiedades. El cual estará, ¡siempre! entre llaves "{}" .
+			Un ejemplo de como se escriben los objetos... es el siguiente.
+
+			    Ejemplo
+		
+		    const Usuario = {
+			    NombreDeUsuario: "Juan.Perez",
+			    Password:"Loremipsumpwd123",
+			}
+
+* Propiedades: 
+                es una asociacion entre nombre y un valor, que se hacen hacia un objeto. Tomando el ejemplo anterior... podemos decir que una de las propiedades del Objeto es, NombreDeUsuario, por lo que podemos pedirle al intérprete, que muestre el contenido de ese dato especifico 
+                    diciendo en Node.JS.
+
+                Usuario.NombreDeUsuario // Y este retornará.   
+                
+                // Juan.Perez.
+
+                O pedirle que muestre el contenido de la 2da proopiedad que es "Password".
+
+*Metodos:   son funciones. Dentro de los objetos. Asociados a una propiedad. 
+			Para entenderlo mejor, desarrollarémos un Objeto en Js, que tenga una propiedad y un Metodo.
+		        Ejemplo
+			        var = persona { 						// Objeto.
+				        nombre: "Manuel",					// propiedad
+				        saludar: fuction() {				// Metodo	
+					        console.log("Hola, Manuel");
+					    }
+			        };
+	        Como podemos observar. En el ejemplo que hemos desarrollado, dentro del objeto persona, está la propiedad "nombre"... y una segunda propiedad, cuyo nombre es, "saludar", asociada con una funcion. A este conjunto se le llama metodo. En este caso podemos decir que el metodo saludar, corresponde al objeto persona.
+
+            Tambien... 
+            Éste término, se aplica a la forma de notación que ocuparemos para
+	        llamar a las propiedades de nuestros objetos. 
+ 	        Existen 2 Métodos en los que nos enfocarémos 
+
+		        *Bracket Notation.
+		        *Dot Notation.
+
+	        Bracket Notation: 
+                                Es una forma  escrita. en la cual se subdivide
+			                    por medio de []. Ante poniendo en nombre del Objeto.
+			
+                                    Ejemplo:
+                                        Usuario["NombreDeUsuario"] 
+                                        // Juan.Perez.
+                                
+                                En este caso las propiedades son de tipo string. Por 
+			                    lo cual se debe escribir la propiedad entre comillas
+                                en el interior de los [].
+	
+	        Dot Notation: 
+                            Éste método es mas sensillo de memorizar. Ya que la forma de uso es (Objeto.propiedad), el nombre del objeto seguido de un "." y por ultimo el nombre de la propiedad.
+			    
+                                Ejemplo:
+                                    Usuario.NombreDeUsuario
+                                    // Juan.Perez.
+
+Bucle for in... loop: 
+				Éste tipo de bucle. Solo es aplicable a los Objetos. Puesto 
+				que las propiedades de los objetos no son de tipo numérico. Su sintaxis es muy igual a la del bucle tradicional. Con la    diferencia de que entre parentesis declararemos una variable,	      seguida por la palabra clave "in" y por ultimo el nombre del objeto.
+		      				  
+				  Esto recorrerá cada clave del objeto y finalizará cuando se 
+		      	  hayan iterado todas las claves. Podemos usar esta clave, y la
+				  notación de corchetes en nuestro bucle for para acceder al
+				  valor asociado con esa clave.
+
+				  	Ejemplo.
+
+					const usuario = {
+						username: 'juan.perez',
+						password: 'loremipsumpwd123',
+						lovesJavascript: true,
+						favoriteNumber: 42
+					};
+
+					for (let clave in usuario){
+						console.log(clave);
+						console.log(usuario[clave]);
+					}
+
+					// username
+					// 'juan.perez'
+					// password
+					// 'loremipsumpwd123'
+					// lovesJavascript
+					// true
+					// favoriteNumber
+					// 42 
+
+
+
+
