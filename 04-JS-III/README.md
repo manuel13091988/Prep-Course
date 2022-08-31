@@ -1,4 +1,4 @@
-![HenryLogo](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png)
++![HenryLogo](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png)
 
 <table class="hide" width="100%" style='table-layout:fixed;'>
   <tr>
@@ -148,7 +148,7 @@ for (let i = 0; i < nombresEstudiantes.length; i++) {
 
 ## Homework
 
-Completa la tarea descrita en el archivo [README](https://github.com/soyHenry/Prep-Course/tree/main/04-JS-III/homework)
+Completa la tarea descrita en el archivo [README](https://github.com/soyHenry/Prep-C 2221|gitourse/tree/main/04-JS-III/homework)
 
 ---
 
