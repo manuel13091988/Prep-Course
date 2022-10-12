@@ -14,7 +14,7 @@ function crearGato (nombre, edad) {
    }    
   };
   return Gato;
-}
+
 
 function agregarPropiedad (objeto, property) {
   // Agrega una propiedad al objeto (argumento "objeto") con el valor `null`
@@ -172,4 +172,5 @@ module.exports = {
   pasarUsuarioAPremium,
   sumarLikesDeUsuario,
   agregarMetodoCalculoDescuento
+}
 }

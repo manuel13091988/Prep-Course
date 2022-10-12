@@ -104,6 +104,18 @@ Bucle for in... loop:
 					// favoriteNumber
 					// 42 
 
+* Notación de puntos vs notación de corchetes: ambas son formas de llamado< una propiedad de un arreglo. 
+											   haciendo alucion a X atributo de X arreglo que nos permite visualizar o modificar los datos
+											   de dicha propiedad. la unica diferencia entre una y la otra es la forma en que se aplica la 
+											   sintaxis.
+
+											   			Ejemplo:
+															Array["ID"]
+															// 0122147
+															
+															  
+
+
 
 
 
