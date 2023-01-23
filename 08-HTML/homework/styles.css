@@ -1,0 +1,363 @@
+
+body{
+    background-color: #ffdd90;
+    background-image: url(img/Carta.jpg);
+    background-repeat: no-repeat;
+    background-position: cover; /*en toda la pantalla del navegador*/
+    background-attachment: initial;
+    background-size: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;  
+    color: rgb(0, 255, 255);
+    font-family:'Edu SA Beginner', cursive;
+    font-family: 'Great Vibes', cursive;
+    font-size: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.4em;
+    -webkit-font-smoothing: antialiased;       
+}
+
+#container{
+    width: 100%;
+    height: 100%;
+}
+
+#thirDiv img{
+    width: 400px;
+    height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+    ul li::marker{
+        color:rgb(161, 15, 246);
+        
+    }
+
+h1{
+ color: rgb(249, 249, 255);
+    font-family: 'Island Moments', cursive, Georgia, 'Times New Roman', Times, serif,;
+    font-family:'Great Vibes', cursive ;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: 20px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+    text-shadow: 2px 2px 2px rgb(13, 4, 133);
+    text-transform: capitalize;
+    }
+
+    h3{
+        color: rgb(7, 7, 6);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: 30px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-left: 20px;
+        text-shadow: 1px 1px 1px rgb(239, 239, 18);
+        text-transform: uppercase;
+    }
+
+    h4{
+        color: #ffffff;
+        font-size: 40px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-family:'Great Vibes', cursive;
+           font-weight: bold; /*tranforma el tipo de escritura en mayuscula*/
+           text-align: 20px;
+           margin-bottom: 20px;
+           margin-top: 25px;
+           margin-left: 20px;
+           text-shadow: 2px 2px 1px rgb(20, 15, 15);
+           text-transform: capitalize;   
+       }
+    
+    h2{
+    color:rgba(185, 162, 255, 0.883);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: 20px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+    text-shadow: 1px 1px 1px rgb(20, 15, 15);
+    text-transform: capitalize;
+    }
+
+    p{
+        color:rgba(133, 254, 238, 0.801);
+        font-size: 40px;
+        font-family: 'Island Moments', cursive, Georgia, 'Times New Roman', Times, serif;
+        font-family: 'Great Vibes', cursive;
+        text-align: 80px;
+        margin-bottom: 20px;
+        margin-top: 30px;
+        margin-left: 20px;
+        text-shadow: 2px 2px 2px rgb(7, 7, 13);
+    }
+    
+    .parrafo{
+        display: block;
+        color: rgba(185, 162, 255, 0.883);
+        font-size: 50px;
+        font-weight: bold;
+        text-align:center;
+        margin-bottom: 30px;
+        margin-top: 50px;
+        margin-left: 20px;
+        text-shadow: 2px 2px 2px rgb(7, 7, 13);
+        text-transform: capitalize;
+
+    }
+    
+    #thirdDiv{
+     /*background-image: url("https://costa-verde.com/wp-content/uploads/2018/07/mise-en-place_19.07.2018-1024x549.jpg");
+     *//*border:10px solid #CFD8DC;*/   
+     display: flex;
+     flex-direction: row-reverse;
+     flex-wrap: nowrap;
+     justify-content: flex-start;
+     padding: 50px;
+     height: 500px;
+     width: 600px;
+     position:absolute;
+     top: 20%;
+     left: 50%;
+     margin-left: 300px;
+     margin-top: 250px;
+     text-align: center;
+     transform: translate(-0%, -0%);
+     border-radius: 10px;
+     -webkit-transform: translate(-0%, -0%);
+     -moz-transform: translate(-0%, -0%);
+     -ms-transform: translate(-0%, -0%);
+     -o-transform: translate(-0%, -0%);
+     transform: translate(-0%, -0%);
+     /*-webkit-border-radius:;
+     -moz-border-radius:;
+     -ms-border-radius:;
+     -o-border-radius:;*/
+}
+    
+    #thirdDiv h1{
+        color: #fff;
+        font-size: 50px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    #thirdDiv h2{
+        color: #fff;
+        font-size: 50px;
+        font-weight: bold;      
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-left: 20px;
+        text-shadow: 2px 2px 2px rgb(20, 15, 15) 
+    }
+    #thirdDiv h2{
+        color: #7caecf;     
+        font-size: 15px;
+        margin-bottom: 20px;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 20px;
+        text-shadow: 2px 2px 2px rgb(20, 15, 15)
+        
+    }
+    
+    #spanId{
+        display: inline;
+        margin: 20px;   
+        font-size: 22px;
+        font-weight: bold;
+        text-align:left;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-left: 20px;
+        text-shadow: 2px 2px 2px rgb(20, 15, 15)
+        
+    }
+    
+       /*codigo sustraido del estilo aplicado
+        a la etiqueta <p></p> copiado a #spanId a{} 
+        para aplicar sombra   
+        margin-top: 20px;
+        margin-left: 20px;
+        text-shadow: 2px 2px 2px rgb(20, 15, 15)
+        */
+    
+    #spanId a{ /*estilo que se aplica despues de hacer click
+                sobre el link*/
+        color: #7caecf;
+        font-size: 40px;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        color: rgb(250, 252, 251);
+        font-size: 40px;
+        font-weight: bold;
+        text-decoration: none;
+        margin-right: 10px;
+        text-align: 20px;
+        margin-bottom: 20px;
+    }
+    
+    #spanId li{
+        display: block;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        text-align: center;
+        font-size: 45px;
+        font-weight: bold;
+        text-decoration: none;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        color: rgb(250, 252, 251);
+        font-size: 45px;
+        font-weight: bold;
+        text-decoration: none;
+        margin-right: 10px;
+        text-align: 20px;
+        margin-bottom: 20px;
+        text-decoration: underline; 
+        color: rgb(9, 16, 150);
+        font-size: 40px;
+        font-weight: bold;
+        text-decoration: none;
+        margin-right: 10px;
+    }
+    
+    
+    #spanId a:hover{ /**/
+ 
+        color: rgb(255, 255, 255);
+        font-size: 40px;
+        font-weight: bold;
+        text-decoration: none;
+        margin-right: 10px;
+        text-decoration: underline;
+        color: rgb(196, 15, 246);
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: overline;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    #spanId li:hover{
+        background-color: rgb(255, 255, 255);
+        text-decoration: underline;
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        font-weight: bold;
+        text-decoration: underline;
+        margin-right: 10px;
+        text-align: 20px;
+        margin-bottom: 20px;
+        text-decoration: underline;
+        color: rgb(196, 15, 246);
+        font-size: 24px;
+        font-weight: bold;
+        text-decoration: overline;
+        margin-right: 20px;
+        text-align: 20px;
+        margin-bottom: 20px;
+        text-decoration: underline;
+        color: rgb(161, 15, 246);
+        font-size: 22px;
+        font-weight: bold;
+        text-decoration: none;
+        margin-right: 10px;
+    }
+    
+    
+    #spanId a:visited{ /**/
+        text-decoration: underline;
+        color: rgb(161, 15, 246);
+        font-size: 45px;
+        font-weight: bold;
+        text-decoration: underline;
+        margin-right: 10px;
+        text-decoration: underline;
+        color: rgb(161, 15, 246);
+        color: rgb(255, 255, 255);    
+        font-size: 40px;
+        font-weight: bold;
+        text-decoration: none;
+        margin-right: 20px;
+        text-decoration: none;
+        margin-left: 20px;
+        text-decoration:overline;
+        margin-top: 20px;
+    }
+
+    #spanId a:hover{
+        text-decoration: underline;
+        color: rgb(161, 15, 246);
+        font-size: 45px;
+        font-weight: bold;
+        text-decoration: none;
+        margin-right: 20px;
+        margin-left: 20px;
+        text-decoration: none;
+        margin-top: 20px;
+    }
+        
+    #spanId ul li:visited{
+        text-decoration: underline;
+        color: rgb(161, 15, 246);
+        font-size: 24px;
+        font-weight: bold;
+        text-decoration: none;
+        margin-right: 10px;
+    }
+    
+    /*codigo para barra lateral de desplazamiento
+    .sidebar {
+        height: 100%;
+        width: 150px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding-top: 40px;
+        background-color: lightblue;
+        }
+        
+        .sidebar div {
+        padding: 8px;
+        font-size: 24px;
+        display: block;
+        }
+        
+        .body-text {
+        margin-left: 150px;
+        font-size: 18px;
+        }
+    */
+    
+    
+
+
+
+
